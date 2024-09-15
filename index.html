@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Explorer - Nelson Lira</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div id="global-container" class="global-container">
+        <div class="nav">
+            <nav>
+                <img src="logo_2.png" class="logo">
+                <div class="menu-options">
+                <ul>
+                    <li><span class="current">Home</span></li>
+                    <li><a href="./about_us.html" id="about">About Us</a></li>
+                    <li><a href="./contact_us.html" id="contact">Contact Us</a></li>
+                </ul>
+                </div>
+
+                <div class="search-div">
+                    <ul>
+                    <li><input type="text" id="searchInput" class="search-box" name="search-box" placeholder="Enter a destination or keyword"></li>
+                    <li><i class="fa fa-search fa-2x"></i></li>
+                    <li><button id='btnSearch'>Search</button></li>
+                    <li><button id='btnClear'>Clear</button></li>
+                </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class = "scroll-container-home">
+            <div class="social">
+                <hr>
+                <p><a href="#"><img src="facebook_2.png" class="media-icon" onmouseover="this.src='facebook_2_over.png'" onmouseout="this.src='facebook_2.png'"></a></p>
+                <p><a href="#"><img src="xmed_2.png" class="media-icon" onmouseover="this.src='xmed_2_over.png'" onmouseout="this.src='xmed_2.png'"></a></p>
+                <p><a href="#"><img src="media3_2.png" class="media-icon" onmouseover="this.src='media3_2_over.png'" onmouseout="this.src='media3_2.png'"></a></p>
+                <p><a href="#"><img src="media4_2.png" class="media-icon" onmouseover="this.src='media4_2_over.png'" onmouseout="this.src='media4_2.png'"></a></p>
+            </div>
+
+            <div class="home-content-div">
+                <h1>Explore</h1>
+                <h1>Dream</h1>
+                <h1>Destination</h1>
+                <div class="intro">
+                    <p class="intro-text">It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+                    <p class="pbutton-book"><button class=book>Book now</button></p>
+                </div>
+            </div>
+
+            <div id="result">Please, enter a valid search query</div>
+        </div>
+    </div>
+
+<script src="./travel_recommendation.js"></script>
+</body>
+</html>
