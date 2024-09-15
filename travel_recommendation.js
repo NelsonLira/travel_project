@@ -32,6 +32,17 @@ function clearSearch() {
             })
           }
 
+
+                else if(input == `countries` || input == `country`){
+                    data.countries.forEach(country =>{
+                    country.cities.forEach(city =>{
+                        resultDiv.innerHTML +=`
+                        <div class=card><img src=${city.imageUrl}><p class=title>${city.name}<span class='link_more'><button class=more>More</button></p><p class=text>${city.description}</p></div>`
+                    })
+            })
+          }
+
+
                 else if(input == `japan` || input == `brazil` || input == `australia`){
 
                   data.countries.forEach(country =>{
